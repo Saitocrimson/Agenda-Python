@@ -32,8 +32,7 @@ class Relatorio():
 class Funcoes(Relatorio):
     def __init__(self):
         self.aux
-        self.listau=[]
-
+       
     def limpa_tela(self):
         self.nome_espaco.delete(0,END)
         self.email_espaco.delete(0,END)
@@ -72,9 +71,8 @@ class Funcoes(Relatorio):
     def lista_tab(self):
         tenta=Conexao()
         self.lista.delete(*self.lista.get_children())
-        listarr=tenta.lista_toda()
-     
-        for i in listarr:
+        lista_aux=tenta.lista_toda()
+        for i in lista_aux:
          
            self.lista.insert("",END,values=i)
 
