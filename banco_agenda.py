@@ -2,7 +2,7 @@ import mysql.connector
 
 class Conexao:
     def __init__(self):
-        self.con = mysql.connector.connect(host='localhost',database='agenda_python',user='root',password='mysql02POPP')
+        self.con = mysql.connector.connect(host='localhost',database='agenda_python',user='root',password='sua senha aquiP')
         self.cursor=self.con.cursor()
     def cria_tab(self):
         cria_tab="""CREATE TABLE tab_agenda(IdNome int primary key AUTO_INCREMENT,Nome VARCHAR(700) NOT NULL,
